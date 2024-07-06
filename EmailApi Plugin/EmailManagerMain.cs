@@ -119,6 +119,7 @@ namespace EmailApi
                     }
 
                     emailApp.PushNotification(message);
+                    DebugLog.LogMessage($"PushNotification : {MessageID} {message.characterNameIDOfSender}");
                 }
                 else 
                 {

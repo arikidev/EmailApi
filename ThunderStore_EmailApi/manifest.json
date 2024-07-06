@@ -1,0 +1,7 @@
+{
+  "name": "EmailApi",
+  "version_number": "0.0.5",
+  "website_url": "https://github.com/arikidev/EmailApi",
+  "description": "Api for custom Emails/Contacts and Notifications with saving",
+  "dependencies": [ "BepInEx-BepInExPack-5.4.2100", "LazyDuchess-CommonAPI-1.1.0" ]
+}

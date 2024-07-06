@@ -26,11 +26,13 @@ namespace EmailApi
             foreach (KeyValuePair<EmailMessage, bool> messageInfo in EmailManager._messagesDatabase)
             {
                 //Check if message is active using Save
-                if (EmailSave.Instance.getMessageState(messageInfo.Key.name))
+     
+                if (EmailSave.Instance.getMessageState(messageInfo.Key.name) || !messageInfo.Value) //If no need to check message
                 {
                     //Check if message has already been added
                     if (!___m_Emails.Contains(messageInfo.Key))
                     {
+                        //DebugLog.LogMessage($" Add : {messageInfo.Key.name}");
                         ___m_Emails.Add(messageInfo.Key);
                     }
                 }

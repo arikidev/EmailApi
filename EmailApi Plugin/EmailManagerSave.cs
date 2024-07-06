@@ -43,6 +43,7 @@ namespace EmailApi
             DebugLog.LogMessage($"Get messageName| {messageName}");
             if (messageStates.ContainsKey(messageName))
             {
+                DebugLog.LogMessage($"Found | {messageName}");
                 return messageStates[messageName];
             }
             DebugLog.LogMessage($"Failed to find Message");
